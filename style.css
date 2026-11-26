@@ -310,6 +310,8 @@ section {
 /* Contact */
 .contact {
     text-align: center;
+    background-color: #1a1a1a;
+    color: #f3f1ec;
 }
 
 .contact-intro {
@@ -327,14 +329,14 @@ section {
 
 .contact-link {
     text-decoration: none;
-    color: var(--text-color);
+    color: #f3f1ec;
     font-size: 1.2rem;
     border-bottom: 1px solid transparent;
     transition: var(--transition);
 }
 
 .contact-link:hover {
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px solid #f3f1ec;
 }
 
 /* Footer */
@@ -379,5 +381,27 @@ footer {
 
     .hero-bottom {
         bottom: 5%;
+    }
+
+    /* Mobile Logo - Miniatura LOO */
+    .main-logo,
+    .nav-logo-image {
+        max-width: 350px !important;
+    }
+
+    /* Sobre Section - Image Above Text on Mobile */
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-image-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-text-container {
+        width: 100%;
+        margin: 0 !important;
     }
 }
